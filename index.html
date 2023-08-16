@@ -2,7 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>RANIS</title>
+    <title>РАНИС — фронтенд разарботчик и дизайнер сайтов</title>
+    <link
+      rel="shortcut icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Manrope&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,8 +31,8 @@
             ><h2 class="welcome__logo-title">RANIS</h2></a
           >
           <nav class="welcomenav">
-            <a class="welcomenav__link" href="#about">портфолио</a>
-            <a class="welcomenav__link" href="#project">компетенции</a>
+            <a class="welcomenav__link" href="#project">портфолио</a>
+            <a class="welcomenav__link" href="#powers">компетенции</a>
             <a class="welcomenav__link" href="#services">услуги</a>
             <a class="welcomenav__link" href="#contacts">контакты</a>
           </nav>
@@ -36,17 +47,20 @@
         </h1>
       </div>
     </header>
+
     <main>
       <section class="project">
         <div class="container">
-          <h2 class="common-title">Самые свежие проекты</h2>
+          <h2 id="project" class="common-title">Самые свежие проекты</h2>
           <ul>
             <li class="project__list">
-              <a class="project__gradient" href="#"
+              <a
+                class="project__gradient"
+                href="https://ranissafiullin.github.io/-MODULE1-checkpoint3/"
                 ><img
                   class="project__img"
                   src="resources/project/metrika.jpg"
-                  alt=""
+                  alt="сайт для студии интерьера"
               /></a>
               <h2 class="project__title">МЕТРИКА</h2>
               <p class="project__text">дизайн,верстка, настройка</p>
@@ -56,7 +70,7 @@
                 ><img
                   class="project__img"
                   src="resources/project/glass.png"
-                  alt=""
+                  alt="сайт для магазина одежды"
               /></a>
               <h2 class="project__title">GLASS</h2>
               <p class="project__text">разработка интерфейса</p>
@@ -66,7 +80,7 @@
                 ><img
                   class="project__img"
                   src="resources/project/Fesiyen.png"
-                  alt=""
+                  alt="сайт интернет мазазина одежды"
               /></a>
               <h2 class="project__title">Fesiyen</h2>
               <p class="project__text">разработка интерфейса</p>
@@ -75,9 +89,10 @@
           <a class="project__btn" href="">Смотреть все проекты</a>
         </div>
       </section>
+
       <section class="powers">
         <div class="container">
-          <h2 class="common-title">Мои компетенции</h2>
+          <h2 id="powers" class="common-title">Мои компетенции</h2>
           <ul>
             <li class="powers__list">
               <h3 class="powers__title">HTML и CSS</h3>
@@ -125,9 +140,10 @@
           </ul>
         </div>
       </section>
+
       <section class="services">
         <div class="container">
-          <h2 class="services__header">
+          <h2 id="services" class="services__header">
             Помогаю реализовать<br />широкий спектр задач
           </h2>
           <ul>
@@ -135,7 +151,7 @@
               <img
                 class="services__img"
                 src="resources/services/Rectangle1.png"
-                alt=""
+                alt="процесс разработки сайта"
               />
               <div class="services__gray-box">
                 <h3 class="services__title">Разработка сайта под ключ</h3>
@@ -152,7 +168,7 @@
               <img
                 class="services__img"
                 src="resources/services/Rectangle2.png"
-                alt=""
+                alt="верстка сайта"
               />
               <div class="services__gray-box">
                 <h3 class="services__title">Верстка сайтов</h3>
@@ -167,7 +183,7 @@
               <img
                 class="services__img"
                 src="resources/services/Rectangle3.png"
-                alt=""
+                alt="разработка мобильного интерфейса"
               />
               <div class="services__gray-box">
                 <h3 class="services__title">
@@ -186,15 +202,32 @@
           </ul>
         </div>
       </section>
+
       <section class="contacts">
-        <img class="contacts__img" src="/resources/contacts/cuate.png" alt="">
-       <div class="container">
-        <h2 class="contacts__title">для связи:</h2>
-        <a class="contacts__feedback" href="">instagram</a>
-        <a class="contacts__feedback" href="https://t.me/safranisraf">telegram</a>
-        <a class="contacts__feedback" href="mailto:hello@mail.com">mail</a>
-       </div>
+        <div class="contacts__box">
+          <img
+            class="contacts__img"
+            src="/resources/contacts/cuate.png"
+            alt="программист html и php"
+          />
+        </div>
+        <div class="container">
+          <h2 id="contacts" class="contacts__title">для связи:</h2>
+          <a class="contacts__feedback" href="">instagram</a>
+          <a class="contacts__feedback" href="https://t.me/safranisraf"
+            >telegram</a
+          >
+          <a class="contacts__feedback" href="mailto:hello@mail.com">mail</a>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer__link" href="#project"
+          >Портфолио фротнтенд-разработчика Раниса Сафиуллина</a
+        >
+        <p class="footer__text">Все права защищены. 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
