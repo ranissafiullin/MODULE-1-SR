@@ -28,7 +28,6 @@ body {
   right: 12px;
   bottom: 9px;
   left: 9px;
-
   font-size: 42.414px;
   font-style: normal;
   font-weight: 700;
@@ -106,7 +105,6 @@ body {
 
 .project__list {
   position: relative;
-  display: inline-block;
   width: 1150px;
   height: 550px;
   object-fit: cover;
@@ -130,9 +128,9 @@ body {
 }
 
 .project__text {
+  position: absolute;
   left: 50px;
   bottom: 50px;
-  position: absolute;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -147,16 +145,16 @@ body {
 }
 
 .project__gradient {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   line-height: 0;
 }
 .project__gradient:after {
   content: "";
+  position: absolute;
   display: block;
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   background: transparent;
@@ -184,7 +182,7 @@ body {
   position: relative;
   display: inline-block;
   margin-top: 80px;
-  padding: 57px 120px;
+  padding: 56px 118px;
   background-color: #1bff07;
   border-radius: 10px;
   line-height: 39px;
@@ -216,9 +214,6 @@ body {
   border-color: #1bff07;
 }
 
-.powers__img {
-}
-
 .powers__title {
   margin-bottom: 15px;
   font-size: 35px;
@@ -233,17 +228,17 @@ body {
 .powers__title::before {
   content: "";
   display: block;
-  margin-top: 60px;
-  margin-bottom: 12px;
+  margin-top: 48px;
+  margin-bottom: 16px;
   width: 45px;
   height: 44px;
-  background-image: url("../resources/powers/html.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .powers__text {
   width: 778px;
+  margin-bottom: 60px;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -252,6 +247,12 @@ body {
 
   color: #fff;
 }
+
+.powers__list--html .powers__title::before {
+  background-image: url("../resources/powers/html.png");
+  margin-bottom: 12px;
+}
+
 .powers__list--js .powers__title::before {
   background-image: url("../resources/powers/js.png");
 }
@@ -279,6 +280,7 @@ body {
 }
 
 .services__img {
+  display: block;
   margin-top: 74px;
 }
 
@@ -317,29 +319,28 @@ body {
 }
 
 .services li:last-child {
-  margin-top: 63px;
+  margin-top: 137px;
   margin-bottom: 150px;
 }
 
 .contacts {
-  height: 717px;
-  margin: 0 auto;
   margin-bottom: 150px;
+  height: 717px;
   border-radius: 30px;
   background: #191c19;
 }
 
 .contacts__box {
   position: relative;
-  width: 1400px;
   margin: 0 auto;
+  width: 1400px;
 }
 
 .contacts__img {
   position: absolute;
+  left: 620px;
   height: 717px;
   border-radius: 30px;
-  left: 703px;
 }
 
 .contacts__title {
@@ -399,8 +400,8 @@ body {
 }
 
 .footer__text {
-  top: 172px;
   position: absolute;
+  top: 172px;
   font-family: Manrope;
   font-size: 20px;
   font-style: normal;
